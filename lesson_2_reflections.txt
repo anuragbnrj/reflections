@@ -1,0 +1,54 @@
+﻿What happens when you initialize a repository? Why do you need to do it?
+A.  It creates an empty repository that contains no commits.it creates the
+    hidden .git file in that directory.
+    We need to do it in order to show the version control system that it is a
+    repository and not any other directory.
+
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+A.  Staging area is the intermediate area where the files to be committed are kept.
+    The working area contains all the files and the repository contains only the
+    committed files.
+    The staging area helps us to see the files which need to be committed in the
+    next commit in a segregated manner. We can ascertain that the commit we are
+    going to make consists of one logical change.
+
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+A.  The files which are concerned with one logical change are put into the staging
+    area to be committed in the next commit. This way we can segregate files which
+    make different logical changes.
+
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+A.  Branching is helpful when you want to add a new feature into your software
+    without disturbing the working version.
+    branches would help as when we branch we can make experimental changes in
+    the new branch without disturbing the main working branch and when we are
+    satisfied that the new changes are complete and tested to be incorporated
+    into the software we can merge the branches.
+
+
+How do the diagrams help you visualize the branch structure?
+A.  It gives us the tree structure to see which branch was created after which
+    commit and when it was created. It will also show us which commits can be
+    reached from a given branch.
+
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+A.  All the commits in the second branch are merged with those of the first
+    branch and the resulting commit becomes the new head.
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+A.  Pros: It will merge even if we forget to merge after adding some working
+          feature.
+          It saves the time of merging manually.
+
+    Cons: It may merge at a stage when the change we have made is not a
+          working change and contains bugs.
